@@ -1,0 +1,85 @@
+@import './index.styl'
+.hot-bg
+    height 1.5rem
+    background-image url('../imgs/hot_music_bg.jpg')
+    background-size auto 1.5rem
+    color #fff
+    padding-left .24rem
+    .hot-tit
+        padding-top .24rem    
+        .hot-pic
+            width 1.6rem
+            height 0.6rem
+            background-image url('../imgs/index_icon.jpg') 
+            background-repeat no-repeat
+            background-size 110%
+            background-position -26px -50px
+        .update-time
+            font-size 13px
+.new_ul
+    .new_li
+        &:nth-child(-n+3) .order
+            color $color1
+    .ns_name
+        .alia
+            padding-left .1rem
+
+
+// 歌单列表头部
+.detail-top 
+    position relative
+    overflow hidden
+    .blur-bg
+        width 100%
+        height 1.9rem
+        background-size 100% auto
+        filter blur(7px)
+    .imgbox
+        position absolute
+        display flex
+        top .3rem
+        z-index 1 
+        width 100%
+        padding 0 .14rem
+        img 
+            width 1.3rem
+    .name
+        padding-left .14rem
+        font-size 16px
+        color #fff
+        .author
+            display flex
+            margin-top .2rem
+        .head
+            display block
+            width .33rem
+            height .33rem
+            border-radius 50%
+        .author_name
+            vertical-align middle
+            padding-left .04rem
+.sl_desc
+    padding .1rem .14rem
+    .tags_box
+        display flex
+        line-height .18rem
+        .tags
+            margin-right .1rem
+            height .18rem
+            line-height .16rem
+            font-size 12px
+            padding 0 .06rem
+            border 1px solid #e0e0e0
+            border-radius .1rem
+    .desc_text
+        overflow hidden
+        text-overflow ellipsis
+        display -webkit-box
+        -webkit-line-clamp 3
+        -webkit-box-orient vertical
+.list_tit
+    background #eeeff0
+    font-size 12px
+    text-indent 1em
+
+            

@@ -1,0 +1,98 @@
+@import './index.styl'
+/* For demo */
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 1.5rem;
+  background: #364d79;
+  overflow: hidden;
+}
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+.bannerbox
+    height 100%
+    width 100%
+    img 
+        display block
+        width 100%
+        height 100%
+
+//推荐歌单 
+.rec
+    .title
+        color $fontcol
+        border-left 2px solid $color1
+        padding-left .1rem
+        margin-bottom .1rem
+.tj_ul
+    display flex
+    justify-content space-evenly
+    flex-wrap wrap
+    width 100%
+    .tj_li
+        width 32%
+        margin-bottom .2rem
+        img
+            width 100% 
+    .name
+        font-size 13px
+        display -webkit-box
+        -webkit-line-clamp 2
+        text-overflow ellipsis
+        overflow hidden
+        -webkit-box-orient vertical
+        padding 6px 2px 0 6px
+.new_ul
+    width 100%
+    .new_li
+        display flex
+        overflow hidden
+        width 100%
+        border-bottom .5px solid #e0e0e0
+        &:nth-child(-n+3) .order
+            color $color1
+        .order,.ls_order
+            display flex
+            display -webkit-flex
+            align-items center
+            margin-left .12rem  
+        .left
+            flex 1
+            margin-left .12rem
+            padding .1rem 0
+            overflow hidden
+            .ns_name
+                text-overflow ellipsis
+                overflow hidden
+                white-space nowrap
+                font-size 17px
+                // padding-bottom .05rem
+                margin-bottom .03rem
+                color #1d1d1d
+                span
+                    color #999
+            .ns_mes
+                text-overflow ellipsis
+                overflow hidden
+                white-space nowrap
+                font-size 13px
+                color #999
+                margin-bottom .03rem
+                .sq_logo 
+                    display inline-block
+                    width .16rem
+                    height .10rem
+                    vertical-align middle
+                    margin 0 .06rem .02rem 0
+                    background-image url('../imgs/index_icon.jpg')
+                    background-size 2.1rem
+        .right
+            display flex
+            -webkit-box-align center
+            align-items center
+            padding 0 .1rem
+            text-align center
+            .play_btn
+                font-size 33px
+                color #aaaaaa
+      
