@@ -1,7 +1,7 @@
 import React,{ Component } from 'react'
 import { Route,NavLink } from 'react-router-dom'
 import '../stylus/Head.styl'
-class XXX extends Component {
+class Head extends Component {
     render() {
        return (
           <div className='head'>
@@ -20,4 +20,4 @@ class XXX extends Component {
     }
 }
 
-export default XXX
+export default Head

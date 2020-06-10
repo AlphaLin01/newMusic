@@ -1,6 +1,7 @@
 import React,{ Component } from 'react'
+import {Link} from 'react-router-dom'
 import '../stylus/search.styl'
-import Songlist from './Songlist'
+
 class Search extends Component {
     constructor(){
         super()
@@ -189,7 +190,7 @@ class Search extends Component {
                     this.state.result ? 
                     this.state.result.map((i,ind)=>{
                         return(
-                            <a href={'/play/'+i.id}  className="new_li" key={ind}>
+                            <Link to={'/play/'+i.id}  className="new_li" key={ind}>
                                 {/* <span className="order">{ind<9 ? '0'+(ind+1) : ind+1 }</span> */}
                                 <div className="left">
                                     <p className="ns_name">
@@ -213,7 +214,7 @@ class Search extends Component {
                                 <div className="right">
                                     <i className="play_btn iconfont">&#xe694;</i>
                                 </div>   
-                            </a>
+                            </Link>
                         )
                     }) : ''
                 } 

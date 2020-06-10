@@ -1,4 +1,5 @@
 import React,{ Component } from 'react'
+import {Link} from 'react-router-dom'
 import '../stylus/recommend.styl'
 import Swiper from './Swiper'
 class Rec extends Component {
@@ -34,10 +35,10 @@ class Rec extends Component {
                 {
                     this.state.recommArr.map((i,ind)=>{
                         return(
-                        <a href={"/detail/"+i.id} className="tj_li"  key={ind}>
+                        <Link to={"/detail/"+i.id} className="tj_li"  key={ind}>
                             <img src={i.picUrl}></img>
                             <span className="name">{i.name}</span>
-                        </a>
+                        </Link>
                         )
                     })
                 }
@@ -47,7 +48,7 @@ class Rec extends Component {
                 {
                     this.state.newsongArr.map((i,ind)=>{
                         return(
-                            <a href={'/play/'+i.id} className="new_li" key={ind}>
+                            <Link to={'/play/'+i.id} className="new_li" key={ind}>
                                 {/* <span className="order">{ind+1}</span>  */}
                                 <div className="left">
                                     <p className="ns_name">
@@ -75,7 +76,7 @@ class Rec extends Component {
                                 <div className="right">
                                     <i className="play_btn iconfont">&#xe694;</i>
                                 </div>   
-                            </a>
+                            </Link>
                         )
                     })
                 }

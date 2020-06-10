@@ -1,7 +1,5 @@
-import Detail from '../components/Detail'
 import Hot from '../components/Hot'
 import Play from '../components/Play'
-import Songlist from '../components/Songlist'
 import Index from '../components/Index'
 
 export default  [
@@ -18,7 +16,7 @@ export default  [
         component:Play
     },
     {
-        path:'*',
+        path:'/*',
         redirect:'/index'
     }
 ]

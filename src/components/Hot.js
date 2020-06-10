@@ -1,4 +1,5 @@
 import React,{ Component } from 'react'
+import {Link} from 'react-router-dom'
 import '../stylus/hot.styl'
 class Hot extends Component {
     constructor(){
@@ -93,7 +94,7 @@ class Hot extends Component {
                 {   songList.tracks ? 
                     songList.tracks.map((i,ind)=>{
                         return(
-                            <a href={'/play/'+i.id}  className="new_li" key={ind}>
+                            <Link to={'/play/'+i.id}  className="new_li" key={ind}>
                                 {this.props.match.params.id ? <span className="ls_order">{ind+1}</span>
                                  : <span className="order">{ind<9 ? '0'+(ind+1) : ind+1 }</span>
                                 }
@@ -119,7 +120,7 @@ class Hot extends Component {
                                 <div className="right">
                                     <i className="play_btn iconfont">&#xe694;</i>
                                 </div>   
-                            </a>
+                            </Link>
                         )
                     }).slice(0,this.state.songRow) : ''
                 }

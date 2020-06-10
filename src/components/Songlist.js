@@ -1,4 +1,5 @@
 import React,{ Component } from 'react'
+import {Link} from 'react-router-dom'
 class Songlist extends Component {
     render() {
         console.log(this.props);
@@ -9,7 +10,7 @@ class Songlist extends Component {
                 {
                     this.props.songArr.map((i,ind)=>{
                         return(
-                            <a href={'/detail/'+i.id}  className="new_li" key={ind}>
+                            <Link to={'/detail/'+i.id}  className="new_li" key={ind}>
                                 <span className="order">{ind<9 ? '0'+(ind+1) : ind+1 }</span>
                                 <div className="left">
                                     <p className="ns_name">
@@ -33,7 +34,7 @@ class Songlist extends Component {
                                 <div className="right">
                                     <i className="play_btn iconfont">&#xe694;</i>
                                 </div>   
-                            </a>
+                            </Link>
                         )
                     }).slice(0,30)
                 }

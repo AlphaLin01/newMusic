@@ -16,16 +16,16 @@ class Play extends Component {
    }
 
    // 刷新和离开页面时停止播放器
-   componentWillMount(){
-      window.addEventListener('beforeunload',this.beforeunload())
-   }
-   componentWillUnmount(){
-      window.addEventListener('beforeunload',this.beforeunload())
-   }
-   beforeunload (e){
-      console.log(111);
-      // this.setState({playFlag:false}) 
-   }
+   // componentWillMount(){
+   //    window.addEventListener('beforeunload',this.beforeunload())
+   // }
+   // componentWillUnmount(){
+   //    window.addEventListener('beforeunload',this.beforeunload())
+   // }
+   // beforeunload (e){
+   //    // console.log(111);
+   //    this.setState({playFlag:false}) 
+   // }
 
    // 获取连接、信息、歌词
    getUrl(){
@@ -211,10 +211,10 @@ class Play extends Component {
          </div>
          <div className="lyric"></div>
          {/* <!-- 播放器 --> */}
-         {/* <audio src={songUrl.url} autoPlay className="audio" ref="myAudio" controls
+         <audio src={songUrl.url} autoPlay className="audio" ref="myAudio" controls
             onPlay={this.onPlay.bind(this)} onPause={this.onPause.bind(this)} 
             onTimeUpdate={this.timeUpdate.bind(this)} onEnded={this.ended.bind(this)}
-         ></audio> */}
+         ></audio>
          <p className="music-name"><span>{songMsg.name} - </span>
          { 
             songMsg.ar ?

@@ -5,7 +5,7 @@ import './index.css'
 import './css/font_1856591_hrxj791hne4/iconfont.css'
 import './commom/js/rem'
 import App from './App';
-import {BrowserRouter as Router} from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom'
 
 import api from './api'
 import axios from 'axios'
@@ -19,9 +19,9 @@ Component.prototype.$audio = glAduio
 Component.prototype.$store = store
 
 ReactDOM.render(
-    <Router>
+    <BrowserRouter>
       <App/>
-    </Router>,
+    </BrowserRouter>,
   document.getElementById('root')
 );
 
