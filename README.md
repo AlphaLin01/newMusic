@@ -1,5 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+本项目基于react脚手架开发，[Create React App](https://github.com/facebook/create-react-app).
 
+主要用于学习和练习react语法和组件开发，react中api的调用和数据渲染，以及redux的使用
+
+本项目接口来源:https://github.com/sqaiyan/netmusic-node
+
+接口启动:
+  npm i 
+  node app
+  
 ## Available Scripts
 
 In the project directory, you can run:
